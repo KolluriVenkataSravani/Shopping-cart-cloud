@@ -63,4 +63,4 @@ jobs:
           app-name: 'ShoppingPortalphp'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7A3AFD487BD043A2AEAEE559D5E511CF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FB88B774A7C54703B6E0D2E9DD0230CD }}
