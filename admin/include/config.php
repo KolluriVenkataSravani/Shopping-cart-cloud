@@ -1,5 +1,5 @@
 <?php
-define('DB_SERVER','shoppingportalphp.azurewebsites.net');
+define('DB_SERVER','sqlserver432.mysql.database.azure.com');
 define('DB_USER','sravani');
 define('DB_PASS' ,'pass@12345');
 define('DB_NAME', 'shopping');
