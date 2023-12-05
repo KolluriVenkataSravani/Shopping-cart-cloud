@@ -1,8 +1,6 @@
 
 <?php
 session_start();
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 include('include/config.php');
 if($_SESSION['alogin']))
 	{	
@@ -11,7 +9,6 @@ echo "<script type='text/javascript'> document.location = 'index.php'; </script>
 else{
 date_default_timezone_set('Asia/Kolkata');// change according timezone
 $currentTime = date( 'd-m-Y h:i:s A', time () );
-
 
 if(isset($_POST['submit']))
 {
@@ -25,6 +22,7 @@ $_SESSION['msg']="Password Changed Successfully !!";
 else
 {
 $_SESSION['msg']="Old Password not match !!";
+}
 }
 }
 ?>
