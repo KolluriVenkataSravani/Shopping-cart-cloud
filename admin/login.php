@@ -15,16 +15,16 @@ $_SESSION['alogin']=$_POST['username'];
 $_SESSION['id']=$num['id'];
 $host=$_SERVER['HTTP_HOST'];
 $uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-echo "<script type='text/javascript'> document.location = 'change-password.php'; </script>";
+header("location:http://$host$uri/$extra");
 exit();
 }
 else
 {
 $_SESSION['errmsg']="Invalid username or password";
-$extra="change-password.php";
+$extra="index.php";
 $host  = $_SERVER['HTTP_HOST'];
 $uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-echo "<script type='text/javascript'> document.location = 'change-password.php'; </script>";
+header("location:http://$host$uri/$extra");
 exit();
 }
 }
