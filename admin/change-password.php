@@ -4,9 +4,9 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include('include/config.php');
-if(strlen($_SESSION['alogin'])==0)
+if($_SESSION['alogin']))
 	{	
-header('location:index.php');
+echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 }
 else{
 date_default_timezone_set('Asia/Kolkata');// change according timezone
