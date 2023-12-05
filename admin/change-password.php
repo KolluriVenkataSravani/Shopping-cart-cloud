@@ -2,11 +2,6 @@
 <?php
 session_start();
 include('include/config.php');
-if($_SESSION['alogin']))
-	{	
-echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
-}
-else{
 date_default_timezone_set('Asia/Kolkata');// change according timezone
 $currentTime = date( 'd-m-Y h:i:s A', time () );
 
