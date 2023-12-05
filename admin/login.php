@@ -21,10 +21,10 @@ exit();
 else
 {
 $_SESSION['errmsg']="Invalid username or password";
-$extra="index.php";
+$extra="change-password.php";
 $host  = $_SERVER['HTTP_HOST'];
 $uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
+echo "<script type='text/javascript'> document.location = 'change-password.php'; </script>";
 exit();
 }
 }
